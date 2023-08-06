@@ -1,0 +1,18 @@
+testing printTable in SCHashTable class
+chain[0]-->NULL
+chain[1]-->NULL
+chain[2]-->NULL
+chain[3]-->(five, 4)-->NULL
+chain[4]-->NULL
+chain[5]-->(seven, 6)-->NULL
+chain[6]-->(enu, 10)-->(ten, 9)-->(nineo, 8)-->(four, 3)-->(threet, 2)-->(two, 1)-->NULL
+chain[7]-->NULL
+chain[8]-->NULL
+chain[9]-->(eight, 7)-->NULL
+chain[10]-->NULL
+chain[11]-->(six, 5)-->NULL
+chain[12]-->NULL
+chain[13]-->NULL
+chain[14]-->NULL
+chain[15]-->NULL
+chain[16]-->NULL

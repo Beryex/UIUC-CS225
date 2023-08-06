@@ -1,0 +1,11 @@
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic tests/basic.cpp
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs225/PNG.cpp
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs225/HSLAPixel.cpp
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs225/lodepng/lodepng.cpp
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic lab_intro.cpp
+g++ basic.o PNG.o HSLAPixel.o lodepng.o lab_intro.o -std=c++1y  -lpng -lpthread -lm -o test
+===============================================================================
+All tests passed (22 assertions in 3 test cases)
+
+
+Total: 10

@@ -1,0 +1,11 @@
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic -ffloat-store sketchify.cpp -o sketchify.o
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic -ffloat-store cs225/HSLAPixel.cpp -o cs225/HSLAPixel.o
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic -ffloat-store cs225/PNG.cpp -o cs225/PNG.o
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic -ffloat-store cs225/lodepng/lodepng.cpp -o cs225/lodepng/lodepng.o
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic -ffloat-store   -c -o tests/unit_tests.o tests/unit_tests.cpp
+g++ sketchify.o cs225/HSLAPixel.o cs225/PNG.o cs225/lodepng/lodepng.o tests/unit_tests.o -std=c++1y -lpthread -lm -o test
+===============================================================================
+All tests passed (2144492 assertions in 7 test cases)
+
+
+Total: 10

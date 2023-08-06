@@ -1,0 +1,39 @@
+#ifndef MY_STACK_H
+#define MY_STACK_H
+
+#include <deque>
+#include <stack>
+
+#define libcpp_stack std::stack // use a partial full path so we don't recursively include this file
+#undef libcpp_stack
+
+namespace std {
+    template <class T, class Container = deque<T> >
+    class my_stack : public std::stack<T, Container> {
+    public:
+        static size_t _ctor_count;
+
+        // these are pretty much copied from libc++'s stack header file
+        my_stack() : std::stack<T, Container>() { _ctor_count ++; };
+        my_stack(const my_stack& q) : std::stack<T, Container>(q) { _ctor_count ++; };
+        my_stack(my_stack&& q) : std::stack<T, Container>(q) { _ctor_count ++; };
+
+        explicit my_stack(const Container& c) : std::stack<T, Container>(c) { _ctor_count ++; };
+        explicit my_stack(Container&& c) : std::stack<T, Container>(c) { _ctor_count ++; };
+
+        template <class Alloc> explicit my_stack(const Alloc& a) : std::stack<T, Container>(a) { _ctor_count ++; }
+        template <class Alloc> my_stack(const Container& c, const Alloc& a) : std::stack<T, Container>(c, a) { _ctor_count ++; }
+        template <class Alloc> my_stack(Container&& c, const Alloc& a) : std::stack<T, Container>(c, a) { _ctor_count ++; }
+        template <class Alloc> my_stack(const my_stack& c, const Alloc& a) : std::stack<T, Container>(c, a) { _ctor_count ++; }
+        template <class Alloc> my_stack(my_stack&& c, const Alloc& a) : std::stack<T, Container>(c, a) { _ctor_count ++; }
+
+        my_stack& operator=(const my_stack& other) = default;
+    };
+
+    template <class T, class Container>
+    size_t my_stack<T, Container>::_ctor_count = 0;
+}
+
+#endif
+
+/* vim: set ft=cpp: */
