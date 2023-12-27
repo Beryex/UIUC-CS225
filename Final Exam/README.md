@@ -2,3 +2,5 @@
 The handwritten solutions in the review PDF may not necessarily be correct.
 # Sample Exam
 The handwritten solutions in the sample exams may not necessarily be correct.
+# DISCLAIMER
+THE AUTHOR OF THIS REPOSITORY SHALL **IN NO CASE** BE HELD LIABLE FOR ANY KIND OF ACADEMIC MISCONDUCT, INCLUDING BUT NOT LIMITED TO PLAGIARISM, AS A RESULT OF IMPROPER OR MISSING CITATION IN THE CORRESPONDING WORK.
