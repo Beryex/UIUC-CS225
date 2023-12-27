@@ -1,0 +1,1 @@
+When testing, try using small files at first such as data/small.txt. Open it up and look inside. Imagine what the tree should look like, and see what’s happening when you run your code.
