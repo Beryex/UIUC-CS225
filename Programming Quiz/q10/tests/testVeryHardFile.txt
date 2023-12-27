@@ -1,0 +1,18 @@
+testing Insert with textVeryHard.txt
+idx: 0 should probe: 0
+idx: 1 should probe: 0
+idx: 2 should probe: 1 Key: 'ten' Value: 9
+idx: 3 should probe: 1 Key: 'five' Value: 4
+idx: 4 should probe: 1 Key: 'seven' Value: 6
+idx: 5 should probe: 1 Key: 'four' Value: 3
+idx: 6 should probe: 1 Key: 'two' Value: 1
+idx: 7 should probe: 1 Key: 'threet' Value: 2
+idx: 8 should probe: 0
+idx: 9 should probe: 1 Key: 'eight' Value: 7
+idx: 10 should probe: 1 Key: 'nineo' Value: 8
+idx: 11 should probe: 1 Key: 'six' Value: 5
+idx: 12 should probe: 0
+idx: 13 should probe: 0
+idx: 14 should probe: 0
+idx: 15 should probe: 1 Key: 'enu' Value: 10
+idx: 16 should probe: 0
