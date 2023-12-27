@@ -1,0 +1,31 @@
+ feedback for boyao.21
+g++ -std=c++1y  -c -g -O0 -Wall -Wextra -pedantic cs225/PNG.cpp
+g++ -std=c++1y  -c -g -O0 -Wall -Wextra -pedantic cs225/HSLAPixel.cpp
+g++ -std=c++1y  -c -g -O0 -Wall -Wextra -pedantic cs225/lodepng/lodepng.cpp
+g++ -std=c++1y  -c -g -O0 -Wall -Wextra -pedantic Image.cpp
+g++ -std=c++1y  -c -g -O0 -Wall -Wextra -pedantic StickerSheet.cpp
+g++ -std=c++1y  -c -g -O0 -Wall -Wextra -pedantic main.cpp
+g++ -std=c++1y  -c -g -O0 -Wall -Wextra -pedantic tests/unit_tests.cpp
+In file included from tests/unit_tests.cpp:134:
+In file included from tests/../StickerSheet.h:3:
+tests/../Image.h:4:11: error: redefinition of 'Image'
+    class Image: public PNG 
+          ^
+tests/unit_tests.cpp:4:10: note: 'tests/../Image.h' included multiple times, additional include site here
+#include "../Image.h"
+         ^
+tests/../StickerSheet.h:3:10: note: 'tests/../Image.h' included multiple times, additional include site here
+#include "Image.h"
+         ^
+tests/../Image.h:4:11: note: unguarded header; consider using #ifdef guards or #pragma once
+    class Image: public PNG 
+          ^
+1 error generated.
+make: *** [unit_tests.o] Error 1
+Compile Error! 
+
++----------------------------+
+| myImage.png looks good. +1 |
++----------------------------+
+
+Total: 1

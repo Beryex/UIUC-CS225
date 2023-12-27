@@ -1,0 +1,14 @@
+mp1 feedback for boyao.21
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic main.cpp 
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs225/PNG.cpp
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs225/HSLAPixel.cpp
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs225/lodepng/lodepng.cpp
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic mp1.cpp
+g++ main.o PNG.o HSLAPixel.o lodepng.o mp1.o -std=c++1y -lpthread -lm -o mp1
+g++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic tests/unit_tests.cpp
+g++ unit_tests.o mp1.o PNG.o HSLAPixel.o lodepng.o -std=c++1y -lpthread -lm -o test
+===============================================================================
+All tests passed (13 assertions in 8 test cases)
+
+
+Total: 10
