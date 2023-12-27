@@ -1,0 +1,576 @@
+desc: (none)
+cmd: ./mp6 tests/source.png ../mp5/mp5_pngs/ 400 5 mosaic.png
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2127270549
+mem_heap_B=78465285
+mem_heap_extra_B=107115
+mem_stacks_B=0
+heap_tree=detailed
+n3: 78465285 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 68335616 0x121665: _copy (PNG.cpp:26)
+  n4: 68335616 0x121665: cs225::PNG::PNG(cs225::PNG const&) (PNG.cpp:46)
+   n1: 45900032 0x1117BA: TileImage (tileimage.h:19)
+    n1: 45900032 0x1117BA: _Construct<TileImage, const TileImage&> (stl_construct.h:119)
+     n1: 45900032 0x1117BA: __uninit_copy<const TileImage*, TileImage*> (stl_uninitialized.h:92)
+      n1: 45900032 0x1117BA: uninitialized_copy<const TileImage*, TileImage*> (stl_uninitialized.h:151)
+       n1: 45900032 0x1117BA: __uninitialized_copy_a<const TileImage*, TileImage*, TileImage> (stl_uninitialized.h:333)
+        n1: 45900032 0x1117BA: __uninitialized_move_if_noexcept_a<TileImage*, TileImage*, std::allocator<TileImage> > (stl_uninitialized.h:355)
+         n1: 45900032 0x1117BA: void std::vector<TileImage, std::allocator<TileImage> >::_M_realloc_insert<TileImage const&>(__gnu_cxx::__normal_iterator<TileImage*, std::vector<TileImage, std::allocator<TileImage> > >, TileImage const&) (vector.tcc:474)
+          n1: 45900032 0x1100F8: push_back (stl_vector.h:1198)
+           n1: 45900032 0x1100F8: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+            n1: 45900032 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+             n0: 45900032 0x10DC4E: main (main.cpp:59)
+   n1: 13500000 0x110083: TileImage (tileimage.h:19)
+    n1: 13500000 0x110083: construct<TileImage, const TileImage&> (new_allocator.h:162)
+     n1: 13500000 0x110083: construct<TileImage, const TileImage&> (alloc_traits.h:516)
+      n1: 13500000 0x110083: push_back (stl_vector.h:1192)
+       n1: 13500000 0x110083: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+        n1: 13500000 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+         n0: 13500000 0x10DC4E: main (main.cpp:59)
+   n1: 8755584 0x116FB8: SourceImage::SourceImage(cs225::PNG const&, int) (sourceimage.cpp:32)
+    n1: 8755584 0x11038C: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:70)
+     n0: 8755584 0x10DC4E: main (main.cpp:59)
+   n0: 180000 in 4 places, all below massif's threshold (1.00%)
+ n2: 8755584 0x121D32: cs225::PNG::readFromFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (PNG.cpp:110)
+  n1: 8755584 0x110376: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:69)
+   n0: 8755584 0x10DC4E: main (main.cpp:59)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 1374085 in 43 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=5129048608
+mem_heap_B=171571011
+mem_heap_extra_B=109101
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=7870822972
+mem_heap_B=252261772
+mem_heap_extra_B=119820
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=11005560681
+mem_heap_B=351263517
+mem_heap_extra_B=133083
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=15202816412
+mem_heap_B=470690403
+mem_heap_extra_B=148821
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=18332999363
+mem_heap_B=567435389
+mem_heap_extra_B=174603
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=22888759310
+mem_heap_B=706431590
+mem_heap_extra_B=180378
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=25227447220
+mem_heap_B=1495320771
+mem_heap_extra_B=252629
+mem_stacks_B=0
+heap_tree=peak
+n2: 1495320771 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1483135648 0x121665: _copy (PNG.cpp:26)
+  n3: 1483135648 0x121665: cs225::PNG::PNG(cs225::PNG const&) (PNG.cpp:46)
+   n1: 1105560064 0x1117BA: TileImage (tileimage.h:19)
+    n1: 1105560064 0x1117BA: _Construct<TileImage, const TileImage&> (stl_construct.h:119)
+     n1: 1105560064 0x1117BA: __uninit_copy<const TileImage*, TileImage*> (stl_uninitialized.h:92)
+      n1: 1105560064 0x1117BA: uninitialized_copy<const TileImage*, TileImage*> (stl_uninitialized.h:151)
+       n1: 1105560064 0x1117BA: __uninitialized_copy_a<const TileImage*, TileImage*, TileImage> (stl_uninitialized.h:333)
+        n1: 1105560064 0x1117BA: __uninitialized_move_if_noexcept_a<TileImage*, TileImage*, std::allocator<TileImage> > (stl_uninitialized.h:355)
+         n1: 1105560064 0x1117BA: void std::vector<TileImage, std::allocator<TileImage> >::_M_realloc_insert<TileImage const&>(__gnu_cxx::__normal_iterator<TileImage*, std::vector<TileImage, std::allocator<TileImage> > >, TileImage const&) (vector.tcc:474)
+          n1: 1105560064 0x1100F8: push_back (stl_vector.h:1198)
+           n1: 1105560064 0x1100F8: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+            n1: 1105560064 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+             n0: 1105560064 0x10DC4E: main (main.cpp:59)
+   n1: 368460000 0x110083: TileImage (tileimage.h:19)
+    n1: 368460000 0x110083: construct<TileImage, const TileImage&> (new_allocator.h:162)
+     n1: 368460000 0x110083: construct<TileImage, const TileImage&> (alloc_traits.h:516)
+      n1: 368460000 0x110083: push_back (stl_vector.h:1192)
+       n1: 368460000 0x110083: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+        n1: 368460000 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+         n0: 368460000 0x10DC4E: main (main.cpp:59)
+   n0: 9115584 in 5 places, all below massif's threshold (1.00%)
+ n0: 12185123 in 44 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=29525702515
+mem_heap_B=827842350
+mem_heap_extra_B=204602
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=32285300196
+mem_heap_B=827978766
+mem_heap_extra_B=215970
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=35546616631
+mem_heap_B=827596014
+mem_heap_extra_B=184010
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=37617864154
+mem_heap_B=827813838
+mem_heap_extra_B=202226
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=42174608689
+mem_heap_B=827967246
+mem_heap_extra_B=215010
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=45488630733
+mem_heap_B=827986446
+mem_heap_extra_B=216610
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=47559878284
+mem_heap_B=827961582
+mem_heap_extra_B=214538
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=51288123747
+mem_heap_B=827970798
+mem_heap_extra_B=215306
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=53773649228
+mem_heap_B=827642958
+mem_heap_extra_B=187986
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=57714671616
+mem_heap_B=828020142
+mem_heap_extra_B=219418
+mem_stacks_B=0
+heap_tree=detailed
+n3: 828020142 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 814795616 0x121665: _copy (PNG.cpp:26)
+  n4: 814795616 0x121665: cs225::PNG::PNG(cs225::PNG const&) (PNG.cpp:46)
+   n1: 737100032 0x1117BA: TileImage (tileimage.h:19)
+    n1: 737100032 0x1117BA: _Construct<TileImage, const TileImage&> (stl_construct.h:119)
+     n1: 737100032 0x1117BA: __uninit_copy<const TileImage*, TileImage*> (stl_uninitialized.h:92)
+      n1: 737100032 0x1117BA: uninitialized_copy<const TileImage*, TileImage*> (stl_uninitialized.h:151)
+       n1: 737100032 0x1117BA: __uninitialized_copy_a<const TileImage*, TileImage*, TileImage> (stl_uninitialized.h:333)
+        n1: 737100032 0x1117BA: __uninitialized_move_if_noexcept_a<TileImage*, TileImage*, std::allocator<TileImage> > (stl_uninitialized.h:355)
+         n1: 737100032 0x1117BA: void std::vector<TileImage, std::allocator<TileImage> >::_M_realloc_insert<TileImage const&>(__gnu_cxx::__normal_iterator<TileImage*, std::vector<TileImage, std::allocator<TileImage> > >, TileImage const&) (vector.tcc:474)
+          n1: 737100032 0x1100F8: push_back (stl_vector.h:1198)
+           n1: 737100032 0x1100F8: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+            n1: 737100032 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+             n0: 737100032 0x10DC4E: main (main.cpp:59)
+   n1: 68760000 0x110083: TileImage (tileimage.h:19)
+    n1: 68760000 0x110083: construct<TileImage, const TileImage&> (new_allocator.h:162)
+     n1: 68760000 0x110083: construct<TileImage, const TileImage&> (alloc_traits.h:516)
+      n1: 68760000 0x110083: push_back (stl_vector.h:1192)
+       n1: 68760000 0x110083: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+        n1: 68760000 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+         n0: 68760000 0x10DC4E: main (main.cpp:59)
+   n1: 8755584 0x116FB8: SourceImage::SourceImage(cs225::PNG const&, int) (sourceimage.cpp:32)
+    n1: 8755584 0x11038C: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:70)
+     n0: 8755584 0x10DC4E: main (main.cpp:59)
+   n0: 180000 in 4 places, all below massif's threshold (1.00%)
+ n2: 8755584 0x121D32: cs225::PNG::readFromFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (PNG.cpp:110)
+  n1: 8755584 0x110376: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:69)
+   n0: 8755584 0x10DC4E: main (main.cpp:59)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 4468942 in 58 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=60625708744
+mem_heap_B=827663886
+mem_heap_extra_B=189730
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=62809032639
+mem_heap_B=828001518
+mem_heap_extra_B=217834
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=65720069728
+mem_heap_B=827808078
+mem_heap_extra_B=201666
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=69358866156
+mem_heap_B=827652750
+mem_heap_extra_B=188802
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=73725565460
+mem_heap_B=828002382
+mem_heap_extra_B=217938
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=76636772768
+mem_heap_B=827912910
+mem_heap_extra_B=210482
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=78820050611
+mem_heap_B=827651694
+mem_heap_extra_B=188634
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=81731142914
+mem_heap_B=827885166
+mem_heap_extra_B=208090
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=85369939268
+mem_heap_B=827983182
+mem_heap_extra_B=216258
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=87553233212
+mem_heap_B=827801166
+mem_heap_extra_B=201090
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=91192029618
+mem_heap_B=827597166
+mem_heap_extra_B=184122
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=95133100509
+mem_heap_B=828020142
+mem_heap_extra_B=219418
+mem_stacks_B=0
+heap_tree=detailed
+n3: 828020142 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 814795616 0x121665: _copy (PNG.cpp:26)
+  n4: 814795616 0x121665: cs225::PNG::PNG(cs225::PNG const&) (PNG.cpp:46)
+   n1: 737100032 0x1117BA: TileImage (tileimage.h:19)
+    n1: 737100032 0x1117BA: _Construct<TileImage, const TileImage&> (stl_construct.h:119)
+     n1: 737100032 0x1117BA: __uninit_copy<const TileImage*, TileImage*> (stl_uninitialized.h:92)
+      n1: 737100032 0x1117BA: uninitialized_copy<const TileImage*, TileImage*> (stl_uninitialized.h:151)
+       n1: 737100032 0x1117BA: __uninitialized_copy_a<const TileImage*, TileImage*, TileImage> (stl_uninitialized.h:333)
+        n1: 737100032 0x1117BA: __uninitialized_move_if_noexcept_a<TileImage*, TileImage*, std::allocator<TileImage> > (stl_uninitialized.h:355)
+         n1: 737100032 0x1117BA: void std::vector<TileImage, std::allocator<TileImage> >::_M_realloc_insert<TileImage const&>(__gnu_cxx::__normal_iterator<TileImage*, std::vector<TileImage, std::allocator<TileImage> > >, TileImage const&) (vector.tcc:474)
+          n1: 737100032 0x1100F8: push_back (stl_vector.h:1198)
+           n1: 737100032 0x1100F8: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+            n1: 737100032 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+             n0: 737100032 0x10DC4E: main (main.cpp:59)
+   n1: 68760000 0x110083: TileImage (tileimage.h:19)
+    n1: 68760000 0x110083: construct<TileImage, const TileImage&> (new_allocator.h:162)
+     n1: 68760000 0x110083: construct<TileImage, const TileImage&> (alloc_traits.h:516)
+      n1: 68760000 0x110083: push_back (stl_vector.h:1192)
+       n1: 68760000 0x110083: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+        n1: 68760000 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+         n0: 68760000 0x10DC4E: main (main.cpp:59)
+   n1: 8755584 0x116FB8: SourceImage::SourceImage(cs225::PNG const&, int) (sourceimage.cpp:32)
+    n1: 8755584 0x11038C: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:70)
+     n0: 8755584 0x10DC4E: main (main.cpp:59)
+   n0: 180000 in 4 places, all below massif's threshold (1.00%)
+ n2: 8755584 0x121D32: cs225::PNG::readFromFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (PNG.cpp:110)
+  n1: 8755584 0x110376: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:69)
+   n0: 8755584 0x10DC4E: main (main.cpp:59)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 4468942 in 58 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=97618649647
+mem_heap_B=827678478
+mem_heap_extra_B=190946
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=100104245658
+mem_heap_B=828020142
+mem_heap_extra_B=219418
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=103832569306
+mem_heap_B=827822382
+mem_heap_extra_B=202858
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=107560981275
+mem_heap_B=828020142
+mem_heap_extra_B=219418
+mem_stacks_B=0
+heap_tree=detailed
+n3: 828020142 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 814795616 0x121665: _copy (PNG.cpp:26)
+  n4: 814795616 0x121665: cs225::PNG::PNG(cs225::PNG const&) (PNG.cpp:46)
+   n1: 737100032 0x1117BA: TileImage (tileimage.h:19)
+    n1: 737100032 0x1117BA: _Construct<TileImage, const TileImage&> (stl_construct.h:119)
+     n1: 737100032 0x1117BA: __uninit_copy<const TileImage*, TileImage*> (stl_uninitialized.h:92)
+      n1: 737100032 0x1117BA: uninitialized_copy<const TileImage*, TileImage*> (stl_uninitialized.h:151)
+       n1: 737100032 0x1117BA: __uninitialized_copy_a<const TileImage*, TileImage*, TileImage> (stl_uninitialized.h:333)
+        n1: 737100032 0x1117BA: __uninitialized_move_if_noexcept_a<TileImage*, TileImage*, std::allocator<TileImage> > (stl_uninitialized.h:355)
+         n1: 737100032 0x1117BA: void std::vector<TileImage, std::allocator<TileImage> >::_M_realloc_insert<TileImage const&>(__gnu_cxx::__normal_iterator<TileImage*, std::vector<TileImage, std::allocator<TileImage> > >, TileImage const&) (vector.tcc:474)
+          n1: 737100032 0x1100F8: push_back (stl_vector.h:1198)
+           n1: 737100032 0x1100F8: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+            n1: 737100032 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+             n0: 737100032 0x10DC4E: main (main.cpp:59)
+   n1: 68760000 0x110083: TileImage (tileimage.h:19)
+    n1: 68760000 0x110083: construct<TileImage, const TileImage&> (new_allocator.h:162)
+     n1: 68760000 0x110083: construct<TileImage, const TileImage&> (alloc_traits.h:516)
+      n1: 68760000 0x110083: push_back (stl_vector.h:1192)
+       n1: 68760000 0x110083: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+        n1: 68760000 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+         n0: 68760000 0x10DC4E: main (main.cpp:59)
+   n1: 8755584 0x116FB8: SourceImage::SourceImage(cs225::PNG const&, int) (sourceimage.cpp:32)
+    n1: 8755584 0x11038C: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:70)
+     n0: 8755584 0x10DC4E: main (main.cpp:59)
+   n0: 180000 in 4 places, all below massif's threshold (1.00%)
+ n2: 8755584 0x121D32: cs225::PNG::readFromFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (PNG.cpp:110)
+  n1: 8755584 0x110376: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:69)
+   n0: 8755584 0x10DC4E: main (main.cpp:59)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 4468942 in 58 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=110046530372
+mem_heap_B=827789934
+mem_heap_extra_B=200154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=113774854068
+mem_heap_B=827744142
+mem_heap_extra_B=196418
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=117503177745
+mem_heap_B=827845134
+mem_heap_extra_B=204834
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=119988748860
+mem_heap_B=827844366
+mem_heap_extra_B=204690
+mem_stacks_B=0
+heap_tree=detailed
+n3: 827844366 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 814795616 0x121665: _copy (PNG.cpp:26)
+  n4: 814795616 0x121665: cs225::PNG::PNG(cs225::PNG const&) (PNG.cpp:46)
+   n1: 737100032 0x1117BA: TileImage (tileimage.h:19)
+    n1: 737100032 0x1117BA: _Construct<TileImage, const TileImage&> (stl_construct.h:119)
+     n1: 737100032 0x1117BA: __uninit_copy<const TileImage*, TileImage*> (stl_uninitialized.h:92)
+      n1: 737100032 0x1117BA: uninitialized_copy<const TileImage*, TileImage*> (stl_uninitialized.h:151)
+       n1: 737100032 0x1117BA: __uninitialized_copy_a<const TileImage*, TileImage*, TileImage> (stl_uninitialized.h:333)
+        n1: 737100032 0x1117BA: __uninitialized_move_if_noexcept_a<TileImage*, TileImage*, std::allocator<TileImage> > (stl_uninitialized.h:355)
+         n1: 737100032 0x1117BA: void std::vector<TileImage, std::allocator<TileImage> >::_M_realloc_insert<TileImage const&>(__gnu_cxx::__normal_iterator<TileImage*, std::vector<TileImage, std::allocator<TileImage> > >, TileImage const&) (vector.tcc:474)
+          n1: 737100032 0x1100F8: push_back (stl_vector.h:1198)
+           n1: 737100032 0x1100F8: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+            n1: 737100032 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+             n0: 737100032 0x10DC4E: main (main.cpp:59)
+   n1: 68760000 0x110083: TileImage (tileimage.h:19)
+    n1: 68760000 0x110083: construct<TileImage, const TileImage&> (new_allocator.h:162)
+     n1: 68760000 0x110083: construct<TileImage, const TileImage&> (alloc_traits.h:516)
+      n1: 68760000 0x110083: push_back (stl_vector.h:1192)
+       n1: 68760000 0x110083: getTiles(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:121)
+        n1: 68760000 0x110404: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:71)
+         n0: 68760000 0x10DC4E: main (main.cpp:59)
+   n1: 8755584 0x116FB8: SourceImage::SourceImage(cs225::PNG const&, int) (sourceimage.cpp:32)
+    n1: 8755584 0x11038C: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:70)
+     n0: 8755584 0x10DC4E: main (main.cpp:59)
+   n0: 180000 in 4 places, all below massif's threshold (1.00%)
+ n2: 8755584 0x121D32: cs225::PNG::readFromFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (PNG.cpp:110)
+  n1: 8755584 0x110376: makePhotoMosaic(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (main.cpp:69)
+   n0: 8755584 0x10DC4E: main (main.cpp:59)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 4293166 in 58 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=123717142329
+mem_heap_B=827693166
+mem_heap_extra_B=192170
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=128688240569
+mem_heap_B=827877678
+mem_heap_extra_B=207466
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=131173868843
+mem_heap_B=828020142
+mem_heap_extra_B=219418
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=133659418035
+mem_heap_B=827913582
+mem_heap_extra_B=210538
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=136144967165
+mem_heap_B=827989518
+mem_heap_extra_B=216802
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=139873303061
+mem_heap_B=827785806
+mem_heap_extra_B=199810
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=143601687501
+mem_heap_B=828011982
+mem_heap_extra_B=218738
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=146087236613
+mem_heap_B=827631534
+mem_heap_extra_B=186954
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=148573526698
+mem_heap_B=997751030
+mem_heap_extra_B=76602
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=151112559851
+mem_heap_B=1019808630
+mem_heap_extra_B=80322
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=154868291384
+mem_heap_B=1044065885
+mem_heap_extra_B=85987
+mem_stacks_B=0
+heap_tree=empty
