@@ -1,5 +1,5 @@
 # CS 225: Data Structure @ ZJUI Spring 2023 by Bryan Wang
-[Bryan Wang](boyaow2@illinois.edu) | CS 225: Data Structure, Spring 2023  
+[Bryan Wang](WangBoyao.02@outlook.com) | CS 225: Data Structure, Spring 2023  
 Instructors:  
 [Kindratenko Volodymyr](kindrtnk@illinois.edu) @ University of Illinois at Urbana-Champaign  
 [Gaoang Wang](mailto:gaoangwang@intl.zju.edu.cn) @ Zhejiang University - University of Illinois Urbana-Champaign Institute  
