@@ -98,7 +98,7 @@ brew update
 brew install --HEAD valgrind
 ```
 
-# DISCLAIMER
+## DISCLAIMER
 If you would like to incorporate any portion of code in this repository into your own work, please cite as follows:
 
 ```
