@@ -1,4 +1,4 @@
-# CS 225: Data Structure @ ZJUI Spring 2023 by Bryan Wang
+# CS 225: Data Structure @ UIUC Spring 2023 by Bryan Wang
 [Bryan Wang](https://github.com/Wang-Boyao) | CS 225: Data Structure, Spring 2023  
 Instructors:  
 [Kindratenko Volodymyr](https://cs.illinois.edu/about/people/faculty/kindrtnk) @ University of Illinois at Urbana-Champaign  
@@ -12,7 +12,7 @@ This work is protected under the [GNU General Public License v3.0](https://www.g
 If you would like to incorporate any portion of code in this repository into your own work, please cite as follows:
 
 ```
-... ; This portion of code is written by Bryan Wang (https://github.com/Wang-Boyao/ZJUI-CS225)
+... ; This portion of code is written by Bryan Wang (https://github.com/Wang-Boyao/UIUC-CS225)
 ```
 
 THE AUTHOR OF THIS REPOSITORY SHALL **IN NO CASE** BE HELD LIABLE FOR ANY KIND OF ACADEMIC MISCONDUCT, INCLUDING BUT NOT LIMITED TO PLAGIARISM, AS A RESULT OF IMPROPER OR MISSING CITATION IN THE CORRESPONDING WORK.
